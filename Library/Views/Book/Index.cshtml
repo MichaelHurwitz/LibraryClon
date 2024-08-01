@@ -1,0 +1,31 @@
+﻿@model List<Library.Models.BookModel>
+
+<h2>Books</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Height</th>
+            <th>Width</th>
+            <th>Set</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Title</td>
+                <td>@book.Ganre</td>
+                <td>@book.Hight</td>
+                <td>@book.Width</td>
+                <td>@book.Set?.SetName</td>
+                <td>
+                    @Html.ActionLink("Edit", "EditBook", new { id = book.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-action="AddBook" class="btn btn-success" asp-route-setId="@ViewBag.SetId">Add New Book</a>

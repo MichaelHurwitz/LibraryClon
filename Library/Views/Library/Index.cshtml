@@ -1,0 +1,24 @@
+﻿@model List<Library.Models.LibraryModel>
+
+<h2>Libraries</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Genre</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var library in Model)
+        {
+            <tr>
+                <td>@library.Ganre</td>
+                <td>
+                    @Html.ActionLink("Edit", "EditLibrary", new { id = library.Id }) |
+                    @Html.ActionLink("View Shelves", "Index", "Shelf", new { libraryId = library.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-action="AddLibrary" class="btn btn-success">Add New Library</a>

@@ -1,0 +1,24 @@
+﻿@model List<Library.Models.SetModel>
+
+<h2>Sets</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Set Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var set in Model)
+        {
+            <tr>
+                <td>@set.SetName</td>
+                <td>
+                    @Html.ActionLink("Edit", "EditSet", new { id = set.Id }) |
+                    @Html.ActionLink("View Books", "Index", "Book", new { setId = set.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-action="AddSet" class="btn btn-success" asp-route-shelfId="@ViewBag.ShelfId">Add New Set</a>

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\Library\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{182E9852-3EA6-4EF4-A221-DA6A051CB731}|Library\\Library.csproj|c:\\users\\user\\onedrive\\desktop\\library\\library\\controllers\\setcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{182E9852-3EA6-4EF4-A221-DA6A051CB731}|Library\\Library.csproj|solutionrelative:library\\controllers\\setcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 161,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SetController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Library\\Library\\Controllers\\SetController.cs",
+              "RelativeDocumentMoniker": "Library\\Controllers\\SetController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Library\\Library\\Controllers\\SetController.cs",
+              "RelativeToolTip": "Library\\Controllers\\SetController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T10:08:11.285Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

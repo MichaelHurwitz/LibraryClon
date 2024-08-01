@@ -1,0 +1,26 @@
+﻿@model List<Library.Models.ShelfModel>
+
+<h2>Shelves</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Height</th>
+            <th>Width</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var shelf in Model)
+        {
+            <tr>
+                <td>@shelf.Hight</td>
+                <td>@shelf.Width</td>
+                <td>
+                    @Html.ActionLink("Edit", "EditShelf", new { id = shelf.Id }) |
+                    @Html.ActionLink("View Sets", "Index", "Set", new { shelfId = shelf.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-action="AddShelf" class="btn btn-success" asp-route-libraryId="@ViewBag.LibraryId">Add New Shelf</a>

@@ -1,0 +1,13 @@
+﻿@model Library.ViewModel.LibraryVm
+
+<h2>Add Library</h2>
+
+<form asp-action="AddLibrary" method="post">
+    <div class="form-group">
+        <label asp-for="Ganre" class="control-label"></label>
+        <input asp-for="Ganre" class="form-control" />
+        <span asp-validation-for="Ganre" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>
